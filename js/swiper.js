@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
 
 const gallerySwiper = new Swiper('.gallery-swiper', {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   grid: {
     rows: 1,
     fill: "row"
@@ -41,7 +41,10 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
       slidesPerView: 3,
       spaceBetween: 50,
     },
-    
+    666: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    }
   }
 })
 
