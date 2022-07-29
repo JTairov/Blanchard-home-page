@@ -48,9 +48,12 @@
           </ul>
         </nav>
         <a href="" class="sign-in">Войти</a>
-        <form method="post" class="search">
-          <input type="text" class="search__input" placeholder="Поиск по сайту">
-          <button type="submit" class="search__btn"></button>
+        <form method="post" class="search" id="search">
+          <div>
+            <button type="submit" class="search__close-btn" id="search__close-btn"></button>
+            <input type="text" class="search__input" placeholder="Поиск по сайту" id="search__input">
+            <button type="submit" class="search__btn" id="search__btn"></button>
+          </div>
         </form>
       </div>
     </div>  
@@ -801,12 +804,8 @@
             </div>
             <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="contact-us__form" id="form">
               <div class="contact-us__inputs">
-                <div>
-                  <input class="form__input text" type="text" placeholder="Имя*" data-validate-field="name" name="name" id="name">
-                </div>
-                <div>
-                  <input class="form__input text" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone" name="tel" id="tel">
-                </div>
+                <input class="form__input text" type="text" placeholder="Имя*" data-validate-field="name" name="name" id="name">
+                <input class="form__input text" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone" name="tel" id="tel">
               </div>
               <button type="submit" class="form__btn" id="submit-btn">Заказать обратный звонок</button>
             </form>
@@ -838,7 +837,7 @@
   </footer>
   
 <!-- scripts -->
-
+  <script src="js/search-input.js"></script>
   <script src="js/burger.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/choices_settings.js"></script>

@@ -448,7 +448,8 @@ body.lock {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  width: 250px;
+  align-items: center;
+  /* width: 250px; */
 }
 
 .search__input {
@@ -462,7 +463,7 @@ body.lock {
   border: none;
   border-bottom: 1px solid var(--white-text);
 
-  transition-property: border, ouline;
+  transition-property: border, outline, width;
 }
 
 .search__input::placeholder {
@@ -471,21 +472,27 @@ body.lock {
   font-weight: 400;
 }
 
-.search__btn {
+.search__btn,
+.search__close-btn {
   width: 22px;
   height: 22px;
   margin-right: 10px;
 
   border: none;
   background: none;
-  background-image: url('../img/header/search__icon.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-
+  
   cursor: pointer;
 }
 
+.search__btn {
+  background-image: url('../img/header/search__icon.svg');
+}
+.search__close-btn {
+  background-image: url('../img/header/search-exit__icon.svg');
+}
 /* Hero */
 
 .hero {
@@ -1479,8 +1486,12 @@ body.lock {
   font-weight: 400;
 }
 
+#name {
+  margin-right: 20px;
+}
+
 .form__btn {
-  padding: 12px 30px;
+  padding: 12px 34px;
   width: 330px;
   font-size: 18px;
   font-weight: 700;
@@ -1778,20 +1789,40 @@ body.lock {
     display: none;
   }
 
-  .header__top-container .search {
-    display: flex;
-    width: fit-content;
-    z-index: 15;
-  }
-  
-  .header__top-container .search .search__input {
-    display: none;
-  }
-
   .header__bottom {
     display: none;
   }
 
+  .header__top-container .search{
+    display: flex;
+    z-index: 15;
+  } 
+  
+  .header__top-container .search div {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 15;
+    width: fit-content;
+  } 
+
+  .header__top-container .search__input {
+    margin-right: 20px;
+    width: 0;
+  }
+  .header__top-container .search__input.active {
+    width: 220px;
+  }
+  
+  .search__close-btn {
+    display: none;
+  }
+  
+  .search__close-btn.active {
+    display: block;
+  }
+  
   /* hero */
 
   .hero__description {
@@ -1883,8 +1914,12 @@ body.lock {
   .find-us__heading {
     text-align: start;
   }
- .messangers {
+  .messangers {
     align-items: flex-start;
+  }
+
+  .form__btn {
+    max-width: 330px;
   }
 
 }
@@ -1980,7 +2015,6 @@ body.lock {
   }
 
   .contact-us__inputs {
-    justify-content: space-between;
     width: 100%;
     margin-bottom: 12px;
     margin-right: 0;
@@ -1991,6 +2025,11 @@ body.lock {
   } 
 
   .form__input {
-    width: 323px;
+    flex: 1 1 320px;
+  }
+
+  .form__btn {
+    max-width: 317px;
+    padding: 12px 0;
   }
 } 
