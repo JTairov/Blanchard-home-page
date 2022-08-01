@@ -51,13 +51,13 @@
           </ul>
         </nav>
         <a href="" class="sign-in">Войти</a>
-        <form method="post" class="search" id="search">
-          <div>
-            <button type="submit" class="search__close-btn" id="search__close-btn"></button>
-            <input type="text" class="search__input" placeholder="Поиск по сайту" id="search__input">
-            <button type="submit" class="search__btn" id="search__btn"></button>
-          </div>
-        </form>
+        <div class="top-search">
+          <form method="post" class="search" id="search-form">
+            <button type="submit" class="search__btn" id="search-open"></button>
+            <input type="text" class="search__input" placeholder="Поиск по сайту" id="search-input">
+            <button class="search__close-btn" id="search-close"></button>
+          </form>
+        </div>
       </div>
     </div>  
     <div class="header__bottom">
@@ -187,9 +187,9 @@
   
     <section class="section gallery" id="gallery">
       <div class="container">
+        <h2 class="gallery__title title">Галерея</h2>
         <div class="gallery__container">
           <div class="filters">
-            <h2 class="gallery__title title">Галерея</h2>
             <h3 class="filters__title">Фильтры</h3>
             <div class="arts-types">
               <select class="js-choice">
@@ -222,7 +222,7 @@
               </li>
             </ul>
           </div>
-          <div class="gallry-swiper__navigation">
+          <div class="gallery-swiper__navigation">
             <div class="swiper-button-prev gallery__btn left_btn"></div>
             <div class="swiper-pagination gallery__pagination"></div>
             <div class="swiper-button-next gallery__btn right_btn"></div>
@@ -319,78 +319,78 @@
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>
             <li class="artists__bio" data-target="jovanni">
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>  
             <li class="artists__bio" data-target="bonsignori">
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>
             <li class="artists__bio" data-target="rafaello">
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>
             <li class="artists__bio" data-target="bramantino">
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>
             <li class="artists__bio" data-target="ludoviko">
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>
             <li class="artists__bio" data-target="tucci">
               <div class="unknown__img">
                 <span class="unknown__img-inside-text">Х - Художник</span>
               </div>
-              <h3 class="artist-name">Что мы о нём занем?</h3>
+              <h3 class="artist-name">Что мы о нём знаем?</h3>
               <p class="artist__text text unknown">
                 <span class="artist__lived" style="display: block;"></span>
                 Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
               </p>
-              <a href="" class="link-to-gallery">В Галерею</a>
+              <a href="" class="link-to-gallery">В галерею</a>
             </li>
           </ul>
 
@@ -809,6 +809,7 @@
                 <input class="form__input text" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone" name="tel" id="tel">
               </div>
               <button type="submit" class="form__btn" id="submit-btn">Заказать обратный звонок</button>
+              <button type="submit" class="form__btn form__btn-short" id="submit-btn">Заказать</button>
             </form>
             <div class="messangers">
               <h3 class="messangers__heading">Связаться в&nbspодин&nbspклик</h3>
@@ -827,7 +828,10 @@
   <footer class="footer">
     <div class="container footer-container">
       <a href="" class="logo">
-        <img src="./img/header/logo.svg" alt="logo" class="logo__img"> 
+        <picture>
+          <source media="(max-width: 666px)" srcset="img/header/logo_mob.svg">
+          <img src="./img/header/logo.svg" alt="logo" class="logo__img">
+        </picture>
       </a>
       <ul class="social-list">
         <li class="social"><a href="#" class="social__link vk"></a></li>

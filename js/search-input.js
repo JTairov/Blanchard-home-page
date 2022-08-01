@@ -1,21 +1,18 @@
-window.addEventListener('DOMContentLoaded', function(){
-  let input = document.querySelector('#search__input')
-  let searchBtn = document.querySelector('#search__btn')
-  let closeBtn = document.querySelector('#search__close-btn')
+let searchForm = document.querySelector('#search-form')
+let input = document.querySelector('#search-input')
+let searchOpen = document.querySelector('#search-open')
+let searchClose = document.querySelector('#search-close')
 
-  
-  searchBtn.addEventListener('click', function(event){
-    event.preventDefault()
-    if(!input.classList.contains('active')){
-      input.classList.add('active')
-      closeBtn.classList.add('active')
-    }
-  })
 
-  closeBtn.addEventListener('click', function(event){
-    event.preventDefault()
-    input.classList.remove('active')
-    closeBtn.classList.remove('active')
-  })
-
+searchOpen.addEventListener('click', function(event){
+  event.preventDefault()
+  searchForm.classList.add('active')
+  input.classList.add('active')
+  searchClose.classList.add('active')
+})
+searchClose.addEventListener('click', function(event){
+  event.preventDefault()
+  searchForm.classList.remove('active')
+  input.classList.remove('active')
+  searchClose.classList.remove('active')
 })

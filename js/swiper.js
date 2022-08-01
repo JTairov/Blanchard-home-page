@@ -50,7 +50,7 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
 
 const eventSwiper =  new Swiper('.events-swiper', {
   loop: false,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 34,
   
   navigation: {
@@ -73,6 +73,10 @@ const eventSwiper =  new Swiper('.events-swiper', {
     1020: {
       slidesPerView: 3,
       spaceBetween: 50,
+    },
+
+    666: {
+      slidesPerView: 2,
     }
   }
 
@@ -81,9 +85,8 @@ const eventSwiper =  new Swiper('.events-swiper', {
 const partnersSwiper =  new Swiper('.partners-swiper', {
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 50,
-
+  slidesPerView: 1,
+  spaceBetween: 35,
   navigation: {
     prevEl: '.partners-btn-prev',
     nextEl: '.partners-btn-next',
@@ -96,6 +99,11 @@ const partnersSwiper =  new Swiper('.partners-swiper', {
   breakpoints: {
     1280: {
       slidesPerView: 3,
+      spaceBetween: 50,
     },
+
+    450: {
+      slidesPerView: 2,
+    }
   }
 }) 
