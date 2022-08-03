@@ -20,5 +20,5 @@ ymaps.ready(init);
 
         myMap.behaviors
             .disable(['scrollZoom'])
-            .enable(['multiTouch'])
+            .disable(['drag','multiTouch'])
     }
