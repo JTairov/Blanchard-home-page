@@ -51,13 +51,29 @@
           </ul>
         </nav>
         <a href="" class="sign-in" aria-label="войти в личный кабинет" tabindex="9">Войти</a>
-        <div class="top-search">
-          <form method="post" class="search" id="search-form">
-            <button type="submit" class="search__btn" id="search-open" aria-label="Найти"></button>
-            <input type="text" class="search__input" placeholder="Поиск по сайту" id="search-input">
-            <button class="search__close-btn" id="search-close" aria-label="Закрыть поле поиска"></button>
-          </form>
-        </div>
+        <button class="search__btn" id="search-open" aria-label="Открыть строку поиска">
+          
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+          </svg>
+  
+        </button>
+        <form method="post" class="search" id="search-form">
+          <button type="submit" class="search__btn" id="find" aria-label="Найти">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+            </svg>
+          </button>
+          <input type="text" class="search__input" placeholder="Поиск по сайту" id="search-input">
+          <button class="search__btn search__close-btn" id="search-close" aria-label="Закрыть поле поиска">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
+              <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>  
     <div class="header__bottom">
@@ -150,7 +166,12 @@
         </div>
         <form method="post" class="search">
           <input type="text" class="search__input" placeholder="Поиск по сайту" tabindex="15"> 
-          <button type="submit" class="search__btn" aria-label="Найти" tabindex="16"></button>
+          <button type="submit" class="search__btn" aria-label="Найти">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+            </svg>
+          </button>
         </form>
       </div>
     </div>
@@ -763,31 +784,31 @@
           <div class="partners-swiper partners-container">
             <ul class="partners-swiper-wrapper swiper-wrapper">
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link "><img src="img/partners/freelands-foundation.png" alt="" class="freelands partner__logo"></a>
+                <a href="#" class="partner__link "><img src="img/partners/freelands-foundation-hover.png" alt="freelands logo" class="freelands partner__logo"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link "><img src="img/partners/ICA.png" alt="" class="partner__logo ica"></a>
+                <a href="#" class="partner__link "><img src="img/partners/ICA-hover.png" alt="ica logo" class="partner__logo ica"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link "><img src="img/partners/workhouse.png" alt="" class="partner__logo workhouse "></a>
+                <a href="#" class="partner__link "><img src="img/partners/workhouse-hover.png" alt="workhouse logo" class="partner__logo workhouse "></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link"><img src="img/partners/wine.png" alt="" class="wine-co partner__logo"></a>
+                <a href="#" class="partner__link"><img src="img/partners/wine-hover.png" alt="wine logo" class="wine-co partner__logo"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link"><img src="img/partners/hiscox.png" alt="" class="partner__logo hiscox"></a>
+                <a href="#" class="partner__link"><img src="img/partners/hiscox-hover.png" alt="hiscox" class="partner__logo hiscox"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link"><img src="img/partners/camden.png" alt="" class="partner__logo camden"></a>
+                <a href="#" class="partner__link"><img src="img/partners/camden-hover.png" alt="camden" class="partner__logo camden"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link"><img src="img/partners/stassen.png" alt="" class="partner__logo stassen"></a>
+                <a href="#" class="partner__link"><img src="img/partners/stassen-hover.png" alt="stassen" class="partner__logo stassen"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link"><img src="img/partners/watts.png" alt="" class="partner__logo watts"></a>
+                <a href="#" class="partner__link"><img src="img/partners/watts-hover.png" alt="watts" class="partner__logo watts"></a>
               </li>
               <li class="swiper-slide partner">
-                <a href="#" class="partner__link"><img src="img/partners/esad.png" alt="" class="partner__logo esad"></a>
+                <a href="#" class="partner__link"><img src="img/partners/esad-hover.png" alt="esad" class="partner__logo esad"></a>
               </li>
             </ul>
           </div>
